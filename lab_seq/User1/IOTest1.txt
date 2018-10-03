@@ -39,8 +39,6 @@ choose_start  2018/10/3 0:26:31
 choose_end  2018/10/3 0:26:32
 choose_start  2018/10/3 0:26:37
 choose_end  2018/10/3 0:26:38
-move_start  2018/10/3 0:26:42
-move_end  2018/10/3 0:26:42
 choose_start  2018/10/3 0:26:56
 choose_end  2018/10/3 0:26:57
 choose_start  2018/10/3 0:27:05
@@ -211,8 +209,6 @@ move_end  2018/10/3 0:29:42
 move_start  2018/10/3 0:29:43
 connect  2018/10/3 0:29:43
 move_end  2018/10/3 0:29:43
-SaveProject  2018/10/3 0:29:46
-SaveProject  2018/10/3 0:29:50
 move_start  2018/10/3 0:29:54
 move_end  2018/10/3 0:29:54
 move_end  2018/10/3 0:29:55
@@ -241,9 +237,11 @@ assign  2018/10/3 0:30:45
 move_start  2018/10/3 0:30:52
 move_end  2018/10/3 0:30:52
 move_end  2018/10/3 0:30:53
+assign  2018/10/3 0:30:53
 move_start  2018/10/3 0:30:53
 move_end  2018/10/3 0:30:53
 move_end  2018/10/3 0:30:54
+assign  2018/10/3 0:30:54
 move_start  2018/10/3 0:31:01
 move_end  2018/10/3 0:31:01
 move_end  2018/10/3 0:31:01
@@ -298,8 +296,6 @@ move_start  2018/10/3 0:33:27
 move_end  2018/10/3 0:33:27
 move_end  2018/10/3 0:33:27
 assign  2018/10/3 0:33:27
-move_start  2018/10/3 0:33:32
-move_end  2018/10/3 0:33:32
 move_start  2018/10/3 0:33:33
 move_end  2018/10/3 0:33:33
 move_end  2018/10/3 0:33:33

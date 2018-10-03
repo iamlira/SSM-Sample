@@ -31,8 +31,6 @@ choose_start  2018/10/3 10:33:40
 choose_end  2018/10/3 10:33:41
 choose_start  2018/10/3 10:33:50
 choose_end  2018/10/3 10:33:52
-move_start  2018/10/3 10:33:59
-move_end  2018/10/3 10:33:59
 move_start  2018/10/3 10:34:01
 connect  2018/10/3 10:34:01
 move_end  2018/10/3 10:34:01
