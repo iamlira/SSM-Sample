@@ -20,7 +20,7 @@
         SET NAME = #{paperName},NUMBER = #{paperNum},detail = #{paperDetail}
         WHERE  paper_id = #{paperId}
     </update>
-    <select id="queryById" parameterType="long" resultMap="Paper">
+    <select id="queryById" parameterType="long" resultType="Paper">
         SELECT paper_id,name,number,detail
         FROM paper
         WHERE paper_id=#{paperId}

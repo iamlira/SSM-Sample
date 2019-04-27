@@ -4,9 +4,11 @@ import org.dao.PaperDAO;
 import org.pojo.Paper;
 import org.service.PaperService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PaperServcieImpl implements PaperService {
     @Autowired
     PaperDAO paperDao;
