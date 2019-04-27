@@ -8,6 +8,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false"%>
 <% String appPath = request.getContextPath(); %>
+<%
+    pageContext.setAttribute("path", request.getContextPath());
+%>
 <html>
 <head>
     <title>Paper列表</title>
