@@ -38,10 +38,13 @@
     </div>
 </div>
 <br><br>
+
 <form action="" name="userForm">
     用户名：<input type="text" name="name"><br><br><br>
     密码：<input type="text" name="pwd"><br><br><br>
+    <h3>
     <input type="button" value="登陆" onclick="login()">
+    </h3>
 </form>
 
 <script type="text/javascript">
@@ -52,8 +55,5 @@
         form.submit();
     }
 </script>
-<h3>
-    <a href="${path}/paper/allPaper">点击进入管理页面</a>
-</h3>
 </body>
 </html>
