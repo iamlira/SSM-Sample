@@ -38,6 +38,20 @@
     </div>
 </div>
 <br><br>
+<form action="" name="userForm">
+    用户名：<input type="text" name="name"><br><br><br>
+    密码：<input type="text" name="pwd"><br><br><br>
+    <input type="button" value="登陆" onclick="login()">
+</form>
+
+<script type="text/javascript">
+    function login() {
+        var form = document.forms[0];
+        form.action = "${path}/login";
+        form.method = "post";
+        form.submit();
+    }
+</script>
 <h3>
     <a href="${path}/paper/allPaper">点击进入管理页面</a>
 </h3>

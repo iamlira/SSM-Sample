@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PaperServcieImpl implements PaperService {
+public class PaperServiceImpl implements PaperService {
     @Autowired
     PaperDAO paperDao;
     @Override
