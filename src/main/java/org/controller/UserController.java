@@ -1,6 +1,8 @@
 package org.controller;
 
 
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -36,8 +38,14 @@ public class UserController {
 
     }
 
-    @Before("login_aop()")
-    public void login_log(){
+    @Around("login_aop()")
+    public void login_log(ProceedingJoinPoint pjp){
         System.out.println("before login");
+        try {
+            pjp.proceed();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        System.out.println("after login");
     }
 }
