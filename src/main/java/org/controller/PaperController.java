@@ -1,5 +1,8 @@
 package org.controller;
 
+import org.apache.http.HttpHost;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestHighLevelClient;
 import org.pojo.Paper;
 import org.service.PaperService;
 import org.springframework.beans.factory.annotation.Autowired;
