@@ -1,1 +1,2 @@
-项目更改为分布式练习项目
+项目由原有的DIDIstribution改为SSM-Sample
+该项目种种原因已废弃，作为ssm的样本代码作为参考
