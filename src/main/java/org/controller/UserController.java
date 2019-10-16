@@ -21,31 +21,34 @@ public class UserController {
 
     @RequestMapping("/login")
     public ModelAndView login(User user) {
-        ModelAndView mv=new ModelAndView();
+        ModelAndView mv = new ModelAndView();
         User queryUser = userService.queryByUser(user);
         login_aop();
         if (user.getName().equals(queryUser.getName()) && user.getPwd().equals(queryUser.getPwd()))
             mv.setViewName("redirect:/paper/allPaper");
         else {
-            mv.addObject("errorMsg","登陆错误");
+            mv.addObject("errorMsg", "登陆错误");
             mv.setViewName("redirect:/");
         }
         return mv;
     }
 
     @Pointcut("execution(public * org.controller.*.*(..))")
-    public void login_aop(){
+    public void login_aop() {
 
     }
 
     @Around("login_aop()")
-    public void login_log(ProceedingJoinPoint pjp){
+    public Object login_log(ProceedingJoinPoint pjp) {
+        Object res = null;
         System.out.println("before login");
         try {
-            pjp.proceed();
+            Object[] args = pjp.getArgs();
+            res = pjp.proceed(args);
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
         System.out.println("after login");
+        return res;
     }
 }
